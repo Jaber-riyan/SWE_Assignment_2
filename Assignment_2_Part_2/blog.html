@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Blog_page</title>
+    <style>
+        body
+        {
+            background: linear-gradient(135deg, #040641 10.47%, #3F0753 98.32%);
+        }
+        .accordion-section
+        {
+            margin: 250px 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- here is acordion  -->
+    <div class="accordion-section">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Discuss the scope of `var`, `let`, and `const`?
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fw-bold">var----Variable declared with 'var' are function -scoped, meaning they are only visible within the function in which they are declared. If 'var' is declared outside any function, it become a global variable. 'var' declaration are hoisted to the top of their scope, which means they are moved to the top during the compilation phase. However, only the declaration is hoisted, not the initializarion. Because of hoisting, you can use a variable declared with 'var' before its actual declaration in the code.
+                <br>
+                <br>
+                let----Variables declared with let have block scope, meaning they are only visible within the block (enclosed by curly braces) in which they are declared. let is not hoisted to the top of the block; it is hoisted to the top of the scope but not initialized until the actual declaration is encountered during runtime. You cannot use a variable declared with let before its declaration in the code.
+                <br>
+                <br>
+                const----Like let, const is block-scoped. Variables declared with const must be assigned a value at the time of declaration, and their value cannot be reassigned later. Similar to let, const is not hoisted to the top of the block.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Tell us the use cases of `null` and `undefined`?
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fw-bold">null----1. Explicitly Signifying Absence of Value:
+                    <br>
+                    null is often used explicitly to indicate the absence of any object value or the intentional absence of a value.For example, a function that encounters an error or does not find a result might return null to indicate the absence of a valid result.
+                <br>
+                <br>
+                2. As a Placeholder for Object Properties:
+                <br>
+                null can be used as a placeholder for object properties, indicating that the property intentionally has no value.
+                <br>
+                <br>
+                <br>
+                <br>
+                undefined----1. Default Value of Function Parameters:
+                <br>
+                If a function parameter is not provided, it is automatically assigned the value undefined. Developers often use this to check if an argument has been passed to a function.
+                <br>
+                <br>
+                2. Variable Initialization:
+                <br>
+                Variables that are declared but not assigned a value are automatically initialized with undefined.
+                <br>
+                <br>
+                3. Return Value of Functions with No Explicit Return:
+                <br>
+                If a function does not explicitly return a value, it implicitly returns undefined.
+            </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What do you mean by REST API?
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse fw-bold" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">REST API----
+                    REST, which stands for Representational State Transfer, is an architectural style for designing networked applications. A RESTful API (Application Programming Interface) is an implementation of this architectural style that uses standard HTTP methods (such as GET, POST, PUT, DELETE) for communication. REST APIs are commonly used in web development to allow communication between client and server systems.
+                <br>
+                <br>
+                Key principles of RESTful APIs include:
+                <br>
+                <br>
+                1. Stateless Communication:
+                <br>
+                Each request from a client to a server must contain all the information needed to understand and fulfill the request. The server should not store any information about the client's state between requests.
+                <br>
+                <br>
+                2. Resource-Based:
+                
+                <br>
+                Resources, such as data objects or services, are identified by unique URIs (Uniform Resource Identifiers). These resources can be manipulated using standard HTTP methods.
+                <br>
+                <br>
+                3. Uniform Interface:
+                <br>
+                
+                A uniform and consistent set of conventions should be followed to interact with resources. This includes the use of standard HTTP methods, representation of resources, and the use of hypermedia (HATEOAS - Hypermedia As The Engine Of Application State) to provide navigation within the application.
+                <br>
+                <br>
+                RESTful APIs have become a standard for building web services due to their simplicity, scalability, and ease of integration with various platforms and technologies. They are widely used in the development of web and mobile applications to facilitate communication between different software systems.
+            </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+
+
+
+      <!-- here is JS connection  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        
+
+</body>
+</html>
